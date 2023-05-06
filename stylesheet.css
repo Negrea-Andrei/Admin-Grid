@@ -35,18 +35,18 @@ body {
 
 .nav-logo {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 30px;
+    grid-template-columns: 75px 3fr;
+    gap: 10px;
     color: rgb(255, 255, 255);
     align-items: center;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .nav-buttons{
     display: grid;
     padding-left: 25px;
     gap: 15px;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 50px 4fr;
     grid-template-rows: repeat(6, 0.4fr);
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -55,7 +55,8 @@ body {
 .nav-settings {
     display: grid;
     padding-left: 25px;
-    grid-template-columns: 1fr 4fr;
+    padding-top: 50px;
+    grid-template-columns: 50px 4fr;
     grid-template-rows: repeat(3, 1fr);
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -64,3 +65,4 @@ body {
 .button:hover, svg {
     cursor: pointer;
 }
+ 
