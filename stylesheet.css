@@ -80,7 +80,9 @@ input {
     border: none;
     background-color: rgb(226, 232, 240);
     width: clamp(350px, 100%, 900px);
-    height: clamp(25px, 40%, 40px)
+    height: clamp(25px, 40%, 40px);
+    padding-left: 10px;
+    font-size: x-large;
 }
 
 .search-bar {
@@ -160,6 +162,7 @@ button {
 }
 
 button:hover {
+    transition: outline 0.5 ease-in-out;
     border: 2px solid #ccc;
     outline: 2px solid rgb(25, 146, 212);
     outline-offset: 4px;
@@ -195,11 +198,13 @@ button:hover {
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
-    box-shadow: 5px 5px 10px rgba(151, 149, 149, 0.747);    
+    box-shadow: 5px 5px 10px rgba(151, 149, 149, 0.747);
+    transition: background-color 0.5s ease-in-out;
 }
 
 .project-card:hover {
     transform: scale(1.05);
+    background-color: #80e9fc;
 }
 
 .project-details {
@@ -284,7 +289,7 @@ button:hover {
 
 .star-plus-outline:hover {
     transition: fill 0.3s ease-in-out;
-    fill: rgb(180, 182, 69);
+    fill: rgb(251, 255, 3);
 }
 
 .eye-plus-outline:hover {
@@ -294,10 +299,10 @@ button:hover {
 
 .share-variant-outline:hover  {
     transition: fill 0.3s ease-in-out;
-    fill: rgb(31, 143, 3);
+    fill: rgb(2, 180, 11);
 }
 
-.button:hover {
-    transition: border 0.3s ease-in-out;
-    border-bottom: 1px solid rgb(10, 84, 145);
+.nav-buttons > .button:hover, .nav-settings > .button:hover {
+    transition: color 0.3s ease-in-out;
+    color: rgb(10, 84, 145);
 }
