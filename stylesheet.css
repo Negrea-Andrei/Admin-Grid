@@ -62,16 +62,16 @@ body {
 
 .nav-settings {
     display: grid;
+    align-items: center;
     padding-left: 25px;
-    padding-top: 50px;
+    padding-top: 25px;
     grid-template-columns: 50px 4fr;
     grid-template-rows: repeat(3, 1fr);
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
 
-.button:hover,
-svg {
+.button:hover, svg {
     cursor: pointer;
 }
 
@@ -279,4 +279,25 @@ button:hover {
 
 .trending-name {
     font-size: medium;
+}
+
+
+.star-plus-outline:hover {
+    transition: fill 0.3s ease-in-out;
+    fill: rgb(180, 182, 69);
+}
+
+.eye-plus-outline:hover {
+    transition: fill 0.3s ease-in-out;
+    fill: rgb(92, 114, 238);
+}
+
+.share-variant-outline:hover  {
+    transition: fill 0.3s ease-in-out;
+    fill: rgb(31, 143, 3);
+}
+
+.button:hover {
+    transition: border 0.3s ease-in-out;
+    border-bottom: 1px solid rgb(10, 84, 145);
 }
