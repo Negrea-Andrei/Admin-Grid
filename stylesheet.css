@@ -197,6 +197,10 @@ button:hover {
     grid-template-rows: 1fr 3fr 1fr;    
 }
 
+.project-card:hover {
+    transform: scale(1.05);
+}
+
 .project-details {
     font-size: small;
     font-weight: lighter;
