@@ -26,7 +26,8 @@ body {
     padding-right: 75px;
     padding-left: 50px;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;    
+    width: clamp(800px, 100%, 76.8vw)
 }
 
 .nav {
@@ -106,6 +107,7 @@ input {
     display: grid;
     align-content: center;
     font-size: larger;
+    width: 140px;
 }
 
 img {
@@ -132,6 +134,7 @@ img {
 
 .user-email {
     font-size: x-large;
+    width: clamp(500px, 50%, 1000px);
 }
 
 .user-info>img {
@@ -160,4 +163,55 @@ button:hover {
     border: 2px solid #ccc;
     outline: 2px solid rgb(25, 146, 212);
     outline-offset: 4px;
+}
+
+.article {
+    display: grid;
+    column-gap: 50px;
+    padding: 20px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.3fr 4fr;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    height: 120px;
+    border-radius: 15px;
+    border-left: 10px solid orange;
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;    
+}
+
+.project-details {
+    font-size: small;
+    font-weight: lighter;
+    color: #979797;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px
+}
+
+.project-buttons {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 15px;
 }
